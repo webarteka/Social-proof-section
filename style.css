@@ -1,0 +1,178 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Spartan', sans-serif;
+    background-color: #fff;
+    height: 100%;
+}
+
+h1{
+    font-size: 50px;
+    font-weight: 700;
+    color: hsl(300, 43%, 22%);
+}
+
+h2{
+    font-size: 15px;
+    font-weight: 700;
+    color: hsl(300, 43%, 22%);
+}
+
+h3{
+    font-size: 15px;
+    font-weight: 400;
+    color: hsl(333, 80%, 67%);
+}
+
+p{
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 25px;
+    color: hsl(303, 10%, 53%);
+}
+
+.home{
+    width: 100%;
+    min-width: 1400px;
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    position: relative;
+}
+
+.container{
+    width: 1400px;
+    min-height: 100%;
+    padding: 80px 20px;
+    margin: 0 auto;
+}
+
+.box-top{
+    width: 100%;
+    display: flex;
+}
+
+.header{
+    flex: 1;
+}
+
+.header h1{
+    max-width: 500px;
+    line-height: 50px;
+}
+
+.header p{
+    margin-top: 15px;
+    max-width: 500px;
+}
+
+.rating{
+    flex: 1;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    grid-row-gap: 20px;
+}
+
+.rate{
+    width: 80%;
+    padding: 15px 30px;
+    border-radius: 10px;
+
+    background-color: hsl(300, 24%, 96%);
+
+    display: flex;
+    align-items: center;
+}
+
+.rate:nth-child(1){
+    justify-self: start;
+}
+
+.rate:nth-child(2){
+    justify-self: center;
+}
+
+.rate:nth-child(3){
+    justify-self: end;
+}
+
+.stars{
+    margin-right: 30px;
+}
+
+.star{
+    margin-right: 5px;
+}
+
+.opinions{
+    width: 100%;
+    min-height: 300px;
+    margin-top: 80px;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 20px;
+}
+
+.opinion{
+    padding: 40px;
+    border-radius: 10px;
+    background-color: hsl(300, 43%, 22%);
+}
+
+.opinion:nth-child(1){
+    align-self: start;
+}
+.opinion:nth-child(2){
+    align-self: center;
+}
+.opinion:nth-child(3){
+    align-self: end;
+}
+
+.opinion h2, .opinion p{
+    color: white;
+}
+
+.opinion p{
+    margin-top: 40px;
+}
+
+.person{
+    display: flex;
+    align-items: center;
+}
+
+.avatar{
+    width: 40px;
+    height: auto;
+
+    margin-right: 20px;
+    border-radius: 50%;
+}
+
+.bg-top{
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    z-index: -1;
+}
+
+.bg-bottom{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+    z-index: -1;
+}
