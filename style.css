@@ -7,7 +7,6 @@
 body{
     font-family: 'Spartan', sans-serif;
     background-color: #fff;
-    height: 100%;
 }
 
 h1{
@@ -37,7 +36,6 @@ p{
 
 .home{
     width: 100%;
-    min-width: 1400px;
     min-height: 100vh;
 
     display: flex;
@@ -48,7 +46,7 @@ p{
 }
 
 .container{
-    width: 1400px;
+    max-width: 1400px;
     min-height: 100%;
     padding: 80px 20px;
     margin: 0 auto;
@@ -120,7 +118,6 @@ p{
 
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 1fr;
     grid-column-gap: 20px;
 }
 
@@ -175,4 +172,54 @@ p{
     right: 0;
 
     z-index: -1;
+}
+
+@media(max-width: 1400px){
+    .container{
+        width: 100%;
+    }
+
+    .box-top{
+        flex-direction: column;
+    }
+
+    .header h1, .header p{
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+
+    .rating{
+        margin-top: 80px;
+    }
+
+    .rate{
+        width: 600px;
+        height: 66px;
+        justify-self: center !important;
+    }
+
+    .opinions{
+        grid-template-columns: 1fr;
+        grid-row-gap: 20px;
+    }
+
+    .opinion{
+        justify-self: center;
+        width: 600px;
+    }
+}
+
+@media(max-width: 800px){
+    html, body, main, .home, .container{
+        width: 100%;
+    }
+
+    .rate{
+        width: 100%;
+    }
+
+    .opinion{
+        width: 100%;
+    }
 }
