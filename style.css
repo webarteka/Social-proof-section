@@ -208,6 +208,10 @@ p{
         justify-self: center;
         width: 600px;
     }
+
+    .bg-top, .bg-bottom{
+        width: 80%;
+    }
 }
 
 @media(max-width: 800px){
@@ -220,6 +224,10 @@ p{
     }
 
     .opinion{
+        width: 100%;
+    }
+
+    .bg-top, .bg-bottom{
         width: 100%;
     }
 }
